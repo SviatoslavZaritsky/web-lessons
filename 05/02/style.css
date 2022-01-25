@@ -1,0 +1,30 @@
+*{
+    margin: 0;          padding: 0;
+}
+.Block1{
+    display: flex;
+    width: 70%;         height: max-content;
+    padding: 20px;
+}
+.Block2{
+    width: 20%;         height: 50vh;
+    display: flex;      flex-direction: column;     justify-content: space-around;
+    border-right: 1px solid black;
+}
+.Block3{
+    width: 100px;        height: 100px;
+    background:rgb(97,138,210);
+    margin: auto;
+}
+.Block4{
+    width:80%;
+    padding-left: 30px;
+    font-size: 25px;
+}
+.Block24 p, h1{
+    padding-bottom: 15px;
+}
+.Block3imgOne,.Block3imgTwo,.Block3imgTree{
+    width: 80px;
+    margin-top: 10px;   margin-left: 10px;
+}
