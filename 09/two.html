@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let numbers = []; let c = 0; let s = 0; let n; ; let i = 0; let y = 0;
+while(true){
+    n = +prompt();
+    if(n / 1 != n){break;}
+    numbers.push(n);
+    c++;
+    s += n / 1;   
+    if(numbers[i] % 2 == 0){
+        i++;
+    }else{
+        y++;
+    } 
+}
+numbers.push(`Парних чисел ${i}, Непарних чисел ${y},`)
+numbers.push(`Сума: ${s}`); alert(numbers.join(), " ")
+    </script>
+</body>
+</html>

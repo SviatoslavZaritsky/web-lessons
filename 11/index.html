@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table id="table">
+        <tr>
+            <td>№</td>
+            <td>Прізвище</td>
+            <td>Зріст</td>
+        </tr>
+    </table>
+    <script>
+        /*Назва деталі комп’ютера, її вартість. Вивести під таблицею  найдешевшу.*/
+        function createStudent(i,name, price){
+            return {
+                i:i,
+                name: name,
+                price: price,
+                info: function(){
+                    let tr = document.createElement("tr");
+                    let td1 = document.createElement("td");td1.innerText = `${this.i}`;
+                    let td2 = document.createElement("td");td2.innerText = `${this.name}`;
+                    let td3 = document.createElement("td");td3.innerText = `${this.price}`;
+                    table.appendChild(tr);
+                    tr.appendChild(td1);tr.appendChild(td2);tr.appendChild(td3);
+                }
+            }
+        }
+
+        let numberOfDetal = prompt("Введіть кількість чоловік:");let detal;
+        for(let i = 0; i < numberOfDetal; i++){
+            let names = prompt("Введіть назву деталі:");let price = prompt("Введіть вартість деталі:");
+            detal = createStudent(i + 1,names,price);detal.info();
+        }
+    </script>
+</body>
+</html>

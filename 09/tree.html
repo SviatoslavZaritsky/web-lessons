@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let gmail = []; let text; let g = 0;
+while(true){
+    text = prompt("Введіть пошту"); 
+    for(let i = 0; i < gmail.length;i++){
+        if(text == gmail[i]){alert("така пошта вже існує")}
+    }
+    
+    for(let i = 1; i < text.length - 1;i++){
+        if(text[i] == "@"){g = 1;}
+    }
+
+    if(g == 0){alert("Пошта не може бути без @!");}
+
+    if(text == null){break;}
+    gmail.push(text);
+}
+alert(gmail.join(", "));
+    </script>
+</body>
+</html>

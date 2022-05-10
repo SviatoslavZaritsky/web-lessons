@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createTovar(name, price){
+            return {
+                name:name,
+                price: price,
+                info: showInfo
+            }
+        }
+        tovar_number_one = createTovar("комп'ютер", "34932.33грн")
+        tovar_number_two = createTovar("пакет", "5.99грн")
+
+        function showInfo(){
+            alert(`Тоавар: ${this.name}; Вартість: ${this.price}`)
+        }
+
+        tovar_number_one.info();
+        tovar_number_two.info();
+    </script>
+</body>
+</html>
